@@ -1,4 +1,4 @@
-connection: "sandbox"
+connection: "tgs_test"
 
 include: "*.view.lkml"         # include all views in this project
 include: "bigquery_audit.dashboard.lookml"  # include all dashboards in this project
