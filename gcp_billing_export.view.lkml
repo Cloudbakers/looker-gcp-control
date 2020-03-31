@@ -5,7 +5,7 @@ view: gcp_billing_export {
         *,
         GENERATE_UUID() as pk
       FROM
-        gcp_logs.gcp_billing_export_v1_#####_#####_######
+        tgs-billing-sandbox.tgs_billing_data_dev.consolidated_gcp_billing_exports
       WHERE
         {% condition date_filter %} _PARTITIONTIME {% endcondition %} ;;
   }
